@@ -176,7 +176,7 @@ padding-bottom: 120px;
 
 .team {
     background-color: #f4f4fd;
-    padding-top: 240px;
+    padding-top: 120px;
 }
 
 .section-title {
@@ -198,6 +198,7 @@ margin: 0 auto 72px;
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 8px;
+    margin-top: 32px;
 }
 
 .description-team {
@@ -206,6 +207,7 @@ margin: 0 auto 72px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 32px;
 }
 
 .team-card {
@@ -222,7 +224,7 @@ margin: 0 auto 72px;
 /*------Portfolio--------*/
 
 .portfolio {
-    padding-top: 240px;
+    padding-top: 120px;
 }
 .goods {
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -250,7 +252,6 @@ margin: 0 auto 72px;
     letter-spacing: 0.02em;
     margin-top: 32px;
     margin-bottom: 4px;
-
 }
 
 .description {
