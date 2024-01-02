@@ -37,8 +37,6 @@ img {
 
 .header {
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-container {
@@ -126,11 +124,6 @@ img {
 .hero {
     background-color: #2e2f42;
     padding: 188px 0;
-}
-
-.hero-container {
-    background-color: #2e2f42;
-    padding-bottom: 120px;
 }
 
 .hero-title {
@@ -307,7 +300,6 @@ border-top: none;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -316,7 +308,6 @@ border-top: none;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
 }
 
 /*-------Footer--------*/
