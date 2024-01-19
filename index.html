@@ -498,10 +498,19 @@ Marketing
         </a>
                 </li>
         </ul>
+        <form class="footer-form">
+            <input
+            type="email"
+            name="footer-email"
+            class="footer-input"
+            placeholder="E-mail">
+            <button type="submit">Subscribe</button>
+        </form>
     </div>
 </div>
    </footer>
-   <div class="backdrop">
+
+   <div class="backdrop is-open">
 <div class="modal">
 <button type="button" class="modal-btn">
     <svg width="8" height="8" class="back-icon">
@@ -559,6 +568,19 @@ id="user-email"
     id="user-comment" 
     class="modal-text" 
     placeholder="Text input"></textarea>
+</div>
+<div class="modal-field">
+<input 
+type="checkbox" 
+name="policy" 
+id="user-policy" 
+class="check-input visually-hidden"
+value="true"
+/>
+<label for="user-policy" class="check-text"
+><span></span>    I accept the terms and conditions of the 
+    <a href="">Privacy Policy</a>
+</label>
 </div>
 <button type="submit" class="submit-btn">Send</button>
 </form>

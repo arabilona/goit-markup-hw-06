@@ -522,12 +522,30 @@ background-color: #31D0AA;
     align-items: baseline;
 }
 
+.footer-input {
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 264px;
+    height: 40px;
+    background-color: #2E2F42;
+}
+
 .backdrop {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     background-color: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .modal {
@@ -558,10 +576,12 @@ background-color: #31D0AA;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.10);
     flex-shrink: 0;
-    margin-right: 24px;
-    margin-top: 24px;
 }
 
+.modal-btn:focus,
+.modal-btn:hover {
+    background-color:#404BBF;
+}
 .modal-name {
     font-family: Roboto;
         color: #2E2F42;
@@ -569,8 +589,9 @@ background-color: #31D0AA;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        padding: 24px 24px 24px 24px;
+        padding-top: 24px;
         text-align: center;
+        margin-bottom: 16px;
 }
 
 .modal-field {
@@ -593,7 +614,8 @@ background-color: #31D0AA;
     border-radius: 4px;
     border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     outline: transparent;
-    padding-left: 16px;
+    padding-left: 38px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus,
@@ -642,6 +664,7 @@ background-color: #31D0AA;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text {
@@ -654,8 +677,49 @@ background-color: #31D0AA;
     gap: 8px;
     background-color: transparent;
     border-radius: 4px;
-    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    border: 1px solid rgba(46, 47, 66, 0.40);
     outline: transparent;
     padding: 12px 16px;
     resize: none;
+    margin-bottom: 16px;
+}
+
+.check-text {
+    color: #8E8F99;
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 24px;
+}
+
+.check-text a {
+    color: #4D5AE5;
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+}
+
+.check-text span {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.check-input {
+    stroke-width: 1px;
+    stroke:  rgba(46, 47, 66, 0.40);
+    display: flex;
+}
+
+.check-input:checked + check-text span {
+stroke-width: 1px;
+    stroke: rgba(46, 47, 66, 0.40);
+    display: flex;
 }
