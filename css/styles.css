@@ -678,7 +678,7 @@ margin-left: 16px;
 }
 
 .modal-field {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .modal-wrap {
@@ -708,8 +708,7 @@ margin-left: 16px;
 
 .modal-input:focus + .modal-icon,
 .modal-input:hover + .modal-icon {
-    stroke: #4D5AE5;
-    fill: #ffffff;
+    fill: #4D5AE5;
 }
 
 .back-icon {
@@ -789,7 +788,6 @@ margin-left: 16px;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        display: flex;
         align-items: center;
         gap: 5px;
 }
