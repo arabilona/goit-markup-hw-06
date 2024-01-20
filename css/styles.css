@@ -612,6 +612,7 @@ margin-left: 16px;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 16px;
 }
 
 .is-open {
@@ -661,7 +662,9 @@ margin-left: 16px;
 .modal-btn:hover {
     background-color:#404BBF;
     border: none;
+    fill: #ffffff;
 }
+
 .modal-name {
     font-family: Roboto;
         color: #2E2F42;
@@ -675,7 +678,7 @@ margin-left: 16px;
 }
 
 .modal-field {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 .modal-wrap {
@@ -808,7 +811,7 @@ margin-left: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -837,7 +840,7 @@ margin-left: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 2px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         fill: transparent;
