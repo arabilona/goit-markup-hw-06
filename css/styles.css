@@ -103,7 +103,7 @@ img {
     color: #404BBF;
 }
 
-.navigation-link::after {
+.current::after {
     content: "";
     position: absolute;
     left: 0;
