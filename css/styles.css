@@ -151,9 +151,10 @@ img {
 .hero {
     background-color: #2e2f42;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    background-image: linear-gradient
+    (rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/mobile-hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -161,15 +162,21 @@ img {
 }
 
 .hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
     color: #FFFFFF;
-    font-size: 56px;
-    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 48px;
-    max-width: 496px;
+    margin-bottom: 72px;
+    /*--max-width: 496px;--*/
+    width: 216px;
+    /*--font-size: 56px;
+        font-weight: 400;
+        line-height: 1.07;
+        width: 496px;--*/
 }
 
 .hero-button {
@@ -199,7 +206,7 @@ img {
 /*--Benefits--*/
 
 .benefits {
-    padding: 120px 0;
+    padding: 168px 16px;
 }
 
 .visually-hidden {
@@ -231,6 +238,7 @@ img {
     font-weight: 700;
     line-height: 1.11;
     text-transform: capitalize;
+    padding-bottom: 8px;
 }
 
 .about-benefits {
@@ -239,6 +247,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 288px;
+    margin-bottom: 72px;
 }
 
 .icons-benefits {
@@ -247,7 +256,7 @@ img {
     border-radius: 4px;
     border: 1px solid var(--LIGHT-SLATE, #8E8F99);
     background: var(--CLOUD, #F4F4FD);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
@@ -258,7 +267,7 @@ img {
 .team {
     background-color: #f4f4fd;
     /*--padding: 120px 0;--*/
-    padding: 192px 0;
+    padding: 192px 16px;
 }
 
 .section-title {
@@ -352,6 +361,7 @@ img {
     /*--padding-top: 80px;--*/
     padding-top: 192px;
     padding-bottom: 120px;
+    padding-left: 16px;
 }
 
 .portfolio-title {
@@ -856,9 +866,19 @@ margin-bottom: 16px;
 @media screen and (min-width:768px) {
 .container {
     max-width: 768px;
-    }
-
-    .team > .container {
+}
+.hero-container {
+    background-image: linear-gradient (rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/tablet-hero-bg.jpg);
+}
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    width: 496px;
+    margin-bottom: 48px;
+}
+.team>.container {
     max-width: 584px;
     }
 .goods {
@@ -870,6 +890,9 @@ margin-bottom: 16px;
 .team-card {
     width: calc((100% - 72px) / 2);
     }
+.benefits {
+    padding: 208px 16px;
+}
 .benefits-list {
     display: flex;
     flex-wrap: wrap;
@@ -888,6 +911,20 @@ margin-bottom: 16px;
 .container {
     max-width: 1158px;
 }
+.hero-container {
+    background-image: linear-gradient (rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+}
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    width: 496px;
+    margin-bottom: 36px;
+}
+.team>.container {
+    max-width: 1158px;
+}
 .goods {
     width: calc((100% - 48px) / 3);
 }
@@ -895,16 +932,19 @@ margin-bottom: 16px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 36px;
 }
 .team-card {
     width: calc((100% - 72px) / 4);
 }
+.benefits {
+    padding: 308px 16px;
+}
 .benefits-list {
-display: flex;
-flex-wrap: wrap;
-column-gap: 24px;
-row-gap: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .benefits-title {
     font-weight: 500;
@@ -920,5 +960,8 @@ row-gap: 48px;
 }
 .about-benefits {
     max-width: 264px;
+}
+.icons-benefits {
+    display: flex;
 }
 }
