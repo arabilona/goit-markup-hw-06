@@ -24,6 +24,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    margin: auto;
 }
 
 .container {
@@ -151,14 +152,21 @@ img {
 .hero {
     background-color: #2e2f42;
     padding: 188px 0;
-    background-image: linear-gradient
-    (rgba(46, 47, 66, 0.7),
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
     url(../images/mobile-hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resulition: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/mobile-hero-bg-2x.jpg);
+    }
 }
 
 .hero-title {
@@ -867,10 +875,18 @@ margin-bottom: 16px;
 .container {
     max-width: 768px;
 }
-.hero-container {
-    background-image: linear-gradient (rgba(46, 47, 66, 0.7),
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/tablet-hero-bg.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2),
+(min-resulition: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/tablet-hero-bg-2x.jpg);
+    }
 }
 .hero-title {
     font-size: 56px;
@@ -911,10 +927,18 @@ margin-bottom: 16px;
 .container {
     max-width: 1158px;
 }
-.hero-container {
-    background-image: linear-gradient (rgba(46, 47, 66, 0.7),
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2),
+(min-resulition: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-2x.jpg);
+    }
 }
 .hero-title {
     font-size: 56px;

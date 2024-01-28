@@ -106,7 +106,12 @@
     
         <ul class="team-list">
         <li class="team-card">
-            <img src="./images/img1.jpg"
+            <img
+            srcset="
+            ./images/img1.jpg 1x, 
+            ./images/card-2x.jpg 2x
+            "
+            src="./images/img1.jpg"
             alt="Mark Guerrero"
             width="264"
             height="270">
@@ -162,7 +167,12 @@
             </div>
         </li>
         <li class="team-card">
-            <img src="./images/img2.jpg"
+            <img
+            srcset="
+            ./images/img2.jpg 1x, 
+            ./images/card-second-2x.jpg 2x
+            "
+            src="./images/img2.jpg"
             alt="Tom Ford"
             width="264"
             height="270">
@@ -218,7 +228,12 @@
             </div>
         </li>
         <li class="team-card">
-            <img src="./images/img3.jpg"
+            <img
+            srcset="
+            ./images/img3.jpg 1x, 
+            ./images/card-third-2x.jpg 2x
+            "
+            src="./images/img3.jpg"
             alt="Camila Garcia"
             width="264"
             height="270">
@@ -274,7 +289,12 @@
             </div>
         </li>
         <li class="team-card">
-            <img src="./images/img4.jpg"
+            <img
+            srcset="
+            ./images/img4.jpg 1x, 
+            ./images/card-fourth-2x.jpg 2x
+            "
+            src="./images/img4.jpg"
             alt="Daniel Wilson"
             width="264"
             height="270">
@@ -341,6 +361,17 @@
     <ul class="goods-list">
         <li class="goods">
             <div class="cover-card">
+            <picture>
+                <source
+                srcset="./images/app1.jpg 1x, ./images/good-2x 2x" media="(min-width: 1158px)"
+                >
+                 <source
+                srcset="./images/tablet-good 1x, ./images/tablet-good-2x 2x" media="(min-width: 768px)"
+                >
+                 <source
+                srcset="./images/mobile-good 1x, ./images/mobile-good-2x 2x" media="(min-width: 320px)"
+                >
+            </picture>
             <img src="./images/app1.jpg"
             alt="Banking App"
             width="360"
@@ -356,6 +387,17 @@ App
 </li>
 <li class="goods">
     <div class="cover-card">
+        <picture>
+                <source
+                srcset="./images/app2.jpg 1x, ./images/good-second-2x 2x" media="(min-width: 1158px)"
+                >
+                 <source
+                srcset="./images/tablet-good-second 1x, ./images/tablet-good-second-2x 2x" media="(min-width: 768px)"
+                >
+                 <source
+                srcset="./images/mobile-good-second 1x, ./images/mobile-good-second-2x 2x" media="(min-width: 320px)"
+                >
+            </picture>
     <img src="./images/app2.jpg"
             alt="Cashless Payment App"
             width="360">
@@ -370,6 +412,17 @@ Marketing
 </li>
 <li class="goods">
     <div class="cover-card">
+        <picture>
+        <source
+        srcset="./images/app3.jpg 1x, ./images/good-third-2x 2x" media="(min-width: 1158px)"
+        >
+        <source
+        srcset="./images/tablet-good-third 1x, ./images/tablet-good-third-2x 2x" media="(min-width: 768px)"
+        >
+        <source
+        srcset="./images/mobile-good-third 1x, ./images/mobile-good-third-2x 2x" media="(min-width: 320px)"
+        >
+            </picture>
     <img src="./images/app3.jpg"
             alt="Open app on a laptop"
             width="360">
@@ -384,6 +437,17 @@ App
 </li>
 <li class="goods">
     <div class="cover-card">
+    <picture>
+    <source
+    srcset="./images/app4.jpg 1x, ./images/good-fourth-2x 2x" media="(min-width: 1158px)"
+    >
+    <source
+    srcset="./images/tablet-good-fourth 1x, ./images/tablet-good-fourth-2x 2x" media="(min-width: 768px)"
+    >
+    <source
+    srcset="./images/mobile-good-fourth 1x, ./images/mobile-good-fourth-2x 2x" media="(min-width: 320px)"
+    >
+    </picture>
     <img src="./images/app4.jpg"
             alt="Taxi App"
             width="360">
@@ -398,6 +462,17 @@ Marketing
 </li>
 <li class="goods">
     <div class="cover-card">
+    <picture>
+    <source
+    srcset="./images/app5.jpg 1x, ./images/good-fifth-2x 2x" media="(min-width: 1158px)"
+    >
+    <source
+    srcset="./images/tablet-good-fifth 1x, ./images/tablet-good-fifth-2x 2x" media="(min-width: 768px)"
+    >
+    <source
+    srcset="./images/mobile-good-fifth 1x, ./images/mobile-good-fifth-2x 2x" media="(min-width: 320px)"
+    >
+    </picture>
     <img src="./images/app5.jpg"
             alt="Images of phone"
             width="360">
@@ -412,6 +487,17 @@ Design
 </li>
 <li class="goods">
     <div class="cover-card">
+    <picture>
+    <source
+    srcset="./images/app6.jpg 1x, ./images/good-sixth-2x 2x" media="(min-width: 1158px)"
+    >
+    <source
+    srcset="./images/tablet-good-sixth 1x, ./images/tablet-good-sixth-2x 2x" media="(min-width: 768px)"
+    >
+    <source
+    srcset="./images/mobile-good-sixth 1x, ./images/mobile-good-sixth-2x 2x" media="(min-width: 320px)"
+    >
+    </picture>
     <img src="./images/app6.jpg"
             alt="Woman is looking at phone"
             width="360">
