@@ -637,7 +637,7 @@ stroke-width: 1px;
 .footer {
     background-color: #2E2F42;
     padding: 100px 0;
-    max-width: 320px;
+    max-width: 100%;
 }
 
 .logo-desc {
@@ -657,7 +657,6 @@ stroke-width: 1px;
     display: inline-block;
     margin-bottom: 16px;
     margin-left: 102px;
-
 }
 
 .logo-accent-second-footer {
@@ -801,10 +800,6 @@ margin-left: 16px;
     height: 40px;
     margin-left: 57px;
     margin-top: 16px;
-}
-
-.follow-icon {
-margin-left: 16px;
 }
 
 .backdrop {
@@ -1105,6 +1100,7 @@ margin-bottom: 16px;
     }
 .team-card {
     width: calc((100% - 72px) / 2);
+    margin-left: auto;
     }
 .benefits {
     padding: 208px 16px;
@@ -1124,8 +1120,19 @@ margin-bottom: 16px;
 .modal {
     width: 408px;
 }
-.footer {
-    max-width: 768px;
+.logo-desc {
+    margin-right: 15px;
+}
+.logo-footer {
+    margin-bottom: 16px;
+    margin-left: 0;
+}
+.footer-media {
+    margin-bottom: 16px;
+    margin-left: 0;
+}
+.footer-icon-list {
+    margin-left: 0;
 }
 .footer-description {
     max-width: 264px;
@@ -1133,65 +1140,33 @@ margin-bottom: 16px;
 .footer-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 .footer-form-container {
-    display: flex;
-}
+    display: block;
+    gap: 24px;
+    margin-left: 0;
+    }
 .footer-form {
     display: flex;
     gap: 24px;
-    margin-left: auto;
+    margin-left: 0;
 }
-
 .name-sub {
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    display: block;
     margin-bottom: 16px;
-    display: inline;
-    margin-left: 16px;
+    margin-left: 0;
 }
-
 .footer-input {
-    border-radius: 4px;
-    border: 1px solid #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 264px;
-    height: 40px;
-    background-color: transparent;
-    padding-left: 16px;
-    color: #FFF;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
     display: flex;
+}
+.follow-btn {
+    margin-top: 0;
+    margin-left: 0;
+}
 }
 
-.follow-btn {
-    color: #FFF;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    border-radius: 4px;
-    cursor: pointer;
-    background: #4D5AE5;
-    display: flex;
-    padding: 8px 24px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    gap: 16px;
-    width: 165px;
-    height: 40px;
-    margin-top: 16px;
-}
-}
+
 
 @media screen and (min-width: 1158px) {
 .container {
@@ -1267,19 +1242,48 @@ margin-bottom: 16px;
 .modal {
     width: 408px;
 }
-.footer {
-    width: 100%;
-}
 .footer-description {
     max-width: 264px;
 }
+.logo-desc {
+    margin-right: 15px;
+}
+.logo-footer {
+    margin-bottom: 16px;
+    margin-left: 0;
+}
+.footer-media {
+    margin-bottom: 16px;
+    margin-left: 0;
+}
+.footer-icon-list {
+    margin-left: 0;
+}
 .footer-container {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .footer-form-container {
-    display: flex;
+    display: block;
+    gap: 24px;
+    margin-left: 0;
 }
 .footer-form {
     display: flex;
+    gap: 24px;
+    margin-left: 15px;
+}
+.name-sub {
+    display: block;
+    margin-bottom: 16px;
+    margin-left: 15px;
+}
+.footer-input {
+    display: flex;
+}
+.follow-btn {
+    margin-top: 0;
+    margin-left: 15px;
 }
 }
