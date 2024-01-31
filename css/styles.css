@@ -31,7 +31,7 @@ img {
     width: 100%;
     /*--max-width: 1158px;--*/
     max-width: 320px;
-    padding: 0 1px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
@@ -65,6 +65,7 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 76px;
+    padding: 17px 0;
 }
 
 .logo-accent-second {
@@ -101,16 +102,14 @@ visibility: hidden;
 pointer-events: none;
 }
 
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 .menu-open-btn {
 background-color: #FFF;
 border: none;
-display: none;
-align-items: center;
-justify-content: center;
-top: 24px;
-margin-left: 149px;
-padding-top: 17px;
-padding-bottom: 17px;
 }
 
 .modal-mob-btn {
@@ -129,7 +128,6 @@ padding-bottom: 17px;
     stroke-width: 1px;
     flex-shrink: 0;
     position: absolute;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     margin-bottom: 24px;
 }
@@ -179,7 +177,6 @@ border: none;
 display: flex;
 align-items: center;
 justify-content: center;
-stroke-width: 1px;
 }
 
 .navigation-mob-link {
@@ -323,7 +320,7 @@ stroke-width: 1px;
 
 .hero {
     background-color: #2e2f42;
-    padding: 188px 0;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
     url(../images/mobile-hero-bg.jpg);
@@ -386,7 +383,7 @@ stroke-width: 1px;
 /*--Benefits--*/
 
 .benefits {
-    padding: 168px 16px;
+    padding: 96px 0;
 }
 
 .visually-hidden {
@@ -425,6 +422,7 @@ stroke-width: 1px;
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 500;
     letter-spacing: 0.02em;
     max-width: 288px;
     margin-bottom: 72px;
@@ -468,6 +466,7 @@ stroke-width: 1px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 24px;
+    justify-content: center;
 }
 
 .team-card {
@@ -543,8 +542,7 @@ stroke-width: 1px;
 .portfolio {
     /*--padding-top: 80px;--*/
     padding-top: 192px;
-    padding-bottom: 120px;
-    padding-left: 16px;
+    padding-bottom: 96px;
 }
 
 .port-img {
@@ -654,7 +652,8 @@ stroke-width: 1px;
     letter-spacing: 0.03em;
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
+    align-items: center;
     margin-bottom: 16px;
     margin-left: 102px;
 }
@@ -680,6 +679,9 @@ stroke-width: 1px;
     margin-bottom: 72px;
 }
 
+.social-link {
+    align-items: center;
+}
 .footer-media {
     font-size: 16px;
     font-weight: 500;
@@ -687,14 +689,14 @@ stroke-width: 1px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
-    margin-left: 112px;
+    text-align: center;
 }
 
 .footer-icon-list {
     display: flex;
     gap: 16px;
-    margin-left: 56px;
     margin-bottom: 72px;
+    align-items: center;
 }
 
 .footer-icon-item {
@@ -731,8 +733,9 @@ background-color: #31D0AA;
 }
 
 .footer-container {
-    /*--display: flex;--*/
-    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .footer-form-container {
@@ -761,7 +764,7 @@ margin-left: 16px;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     display: block;
-    margin-left: 122px;
+    text-align: center;
 }
 
 .footer-input {
@@ -777,6 +780,8 @@ margin-left: 16px;
     line-height: 2;
     letter-spacing: 0.04em;
     display: flex;
+    align-items: center;
+
 }
 
 .follow-btn {
@@ -798,8 +803,8 @@ margin-left: 16px;
     gap: 16px;
     width: 165px;
     height: 40px;
-    margin-left: 57px;
     margin-top: 16px;
+    margin-left: 56px;
 }
 
 .backdrop {
@@ -1065,12 +1070,25 @@ margin-bottom: 16px;
 }
 .navigation {
     display: flex;
+    padding: 0;
 }
 .address {
     display: block;
     margin-left: 122px;
 }
+.address-list {
+    font-size: 12px;
+}
+.menu-open-btn {
+    display: none;
+}
+.is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 .hero {
+    padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/tablet-hero-bg.jpg);
@@ -1092,36 +1110,57 @@ margin-bottom: 16px;
 .team>.container {
     max-width: 584px;
     }
+.team {
+    padding: 120px 0;
+}
+.portfolio {
+justify-content: center;  
+padding: 96px 0;  
+}
 .goods {
     width: calc((100% - 48px) / 2);
     }
 .team-list {
     display: flex;
-    }
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 36px;
+}
 .team-card {
     width: calc((100% - 72px) / 2);
     margin-left: auto;
     }
 .benefits {
-    padding: 208px 16px;
+    padding: 96px 0;
 }
 .benefits-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 72px;
 }
 .benefits-title {
     text-align: left;
+    margin-bottom: 8px;
 }
 .benefits-item {
     width: calc((100% - 72px) / 2);
 }
+.about-benefits {
+    width: 356px;
+}
 .modal {
     width: 408px;
 }
+.footer {
+    padding: 96px 0;
+}
+.footer-description {
+    max-width: 264px;
+    margin-bottom: 0;
+}
 .logo-desc {
-    margin-right: 15px;
+    margin-right: 24px;
 }
 .logo-footer {
     margin-bottom: 16px;
@@ -1130,12 +1169,12 @@ margin-bottom: 16px;
 .footer-media {
     margin-bottom: 16px;
     margin-left: 0;
+    text-align: left;
 }
 .footer-icon-list {
     margin-left: 0;
-}
-.footer-description {
-    max-width: 264px;
+    margin-bottom: 0;
+    gap: 16px;
 }
 .footer-container {
     display: flex;
@@ -1146,9 +1185,10 @@ margin-bottom: 16px;
     display: block;
     gap: 24px;
     margin-left: 0;
-    }
+}
 .footer-form {
     display: flex;
+    flex-direction: row;
     gap: 24px;
     margin-left: 0;
 }
@@ -1156,13 +1196,16 @@ margin-bottom: 16px;
     display: block;
     margin-bottom: 16px;
     margin-left: 0;
+    text-align: left;
 }
 .footer-input {
     display: flex;
+    width: 264px;
 }
 .follow-btn {
     margin-top: 0;
     margin-left: 0;
+    margin-left: 24px;
 }
 }
 
@@ -1171,14 +1214,26 @@ margin-bottom: 16px;
 @media screen and (min-width: 1158px) {
 .container {
     max-width: 1158px;
+    padding: 0 15px;
 }
 .navigation {
     display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .address {
     display: flex;
 }
+.menu-open-btn {
+    display: none;
+}
+.is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 .hero {
+    padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
@@ -1200,6 +1255,9 @@ margin-bottom: 16px;
 .team>.container {
     max-width: 1158px;
 }
+.team {
+    padding: 120px 0;
+}
 .goods {
     width: calc((100% - 48px) / 3);
 }
@@ -1211,9 +1269,10 @@ margin-bottom: 16px;
 }
 .team-card {
     width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
 }
 .benefits {
-    padding: 308px 16px;
+    padding: 120px 0;
 }
 .benefits-list {
     display: flex;
@@ -1227,7 +1286,6 @@ margin-bottom: 16px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    padding-top: 8px;
     text-align: left;
 }
 .benefits-item {
@@ -1235,18 +1293,24 @@ margin-bottom: 16px;
 }
 .about-benefits {
     max-width: 264px;
+    margin-bottom: 0;
+    font-weight: 400;
 }
 .icons-benefits {
     display: flex;
+}
+.portfolio {
+    padding-top: 120px;
 }
 .modal {
     width: 408px;
 }
 .footer-description {
     max-width: 264px;
+    margin-bottom: 0;
 }
 .logo-desc {
-    margin-right: 15px;
+    margin-right: 120px;
 }
 .logo-footer {
     margin-bottom: 16px;
@@ -1255,29 +1319,33 @@ margin-bottom: 16px;
 .footer-media {
     margin-bottom: 16px;
     margin-left: 0;
+    text-align: left;
 }
 .footer-icon-list {
     margin-left: 0;
+    margin-bottom: 0;
+    gap: 16px;
 }
 .footer-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 0;
 }
 .footer-form-container {
     display: block;
     gap: 24px;
-    margin-left: 0;
+    margin-left: auto;
+    margin-bottom: 0;
 }
 .footer-form {
     display: flex;
     gap: 24px;
-    margin-left: 15px;
 }
 .name-sub {
     display: block;
     margin-bottom: 16px;
-    margin-left: 15px;
+    text-align: left;
 }
 .footer-input {
     display: flex;
