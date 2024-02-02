@@ -677,6 +677,8 @@ justify-content: center;
     letter-spacing: 0.02em;
     width: 288px;
     margin-bottom: 72px;
+    justify-content: center;
+    text-align: center;
 }
 
 .social-link {
@@ -697,6 +699,7 @@ justify-content: center;
     gap: 16px;
     margin-bottom: 72px;
     align-items: center;
+    justify-content: center;
 }
 
 .footer-icon-item {
@@ -765,6 +768,8 @@ margin-left: 16px;
     margin-bottom: 16px;
     display: block;
     text-align: center;
+    justify-content: center;
+    margin-left: 0;
 }
 
 .footer-input {
@@ -781,6 +786,7 @@ margin-left: 16px;
     letter-spacing: 0.04em;
     display: flex;
     align-items: center;
+    margin-right: 48px;
 
 }
 
@@ -1160,7 +1166,7 @@ padding: 96px 0;
     margin-bottom: 0;
 }
 .logo-desc {
-    margin-right: 24px;
+    margin-right: 0px;
 }
 .logo-footer {
     margin-bottom: 16px;
@@ -1189,8 +1195,9 @@ padding: 96px 0;
 .footer-form {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    row-gap: 24px;
     margin-left: 0;
+    justify-content: center;
 }
 .name-sub {
     display: block;
@@ -1201,11 +1208,11 @@ padding: 96px 0;
 .footer-input {
     display: flex;
     width: 264px;
+    padding-left: 24px;
 }
 .follow-btn {
     margin-top: 0;
     margin-left: 0;
-    margin-left: 24px;
 }
 }
 
